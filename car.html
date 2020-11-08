@@ -1,0 +1,28 @@
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+								<!DOCTYPE html><html><head><title>Moving Car</title></head>
+								<body><script src = "lib/p5.js"></script><!--a great car-->
+								<script type="text/javascript">/*javcrpt*/function setup(){
+					createCanvas(1000, 600);}function Car(x, y){this.x = x;this.y = y; this.display = function(){
+					fill(0);ellipse(this.x + 40, this.y + 50, 40, 40); ellipse(this.x + 160, this.y + 50, 40, 40);
+					fill(255, 0, 0);rect(this.x, this.y,200,50);fill(255, 255, 0);rect(this.x+50,this.y-30,80,30);
+					fill(0, 0, 255); rect(this.x, this.y-20, 8, 20);this.x = this.x + (5 * (mouseX / 1000));//epic
+							if(this.x >= 1010){									this.x = -210;}}}
+							/*we go!*/var car = 								new Car(210, 430)
+							function draw(){/**/								background( 255);
+							car.display();/*hi*/								fill(50);/*whel*/
+
+					rect(0, 500, 1000, 100);}</script></body></html><!--Comment below what you think of this!!!-->
+
